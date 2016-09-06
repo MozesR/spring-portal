@@ -10,4 +10,13 @@ public class RootController {
 	public String Home(){
 		return "Welcome";
 	}
+	
+	@RequestMapping("/about")
+	public String About(){
+		return "About";
+	}
+	@RequestMapping("/contact")
+	public String Contact(){
+		return "Contact";
+	}
 }
