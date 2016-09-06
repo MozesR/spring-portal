@@ -15,6 +15,11 @@ public class RootController {
 	public String About(){
 		return "About";
 	}
+	@RequestMapping("/download")
+	public String Download(){
+		return "Download";
+	}
+	
 	@RequestMapping("/contact")
 	public String Contact(){
 		return "Contact";
