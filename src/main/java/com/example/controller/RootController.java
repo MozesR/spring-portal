@@ -17,7 +17,7 @@ public class RootController {
 	}
 	@RequestMapping("/download")
 	public String Download(){
-		return "Download";
+		return "Download app";
 	}
 	
 	@RequestMapping("/contact")
