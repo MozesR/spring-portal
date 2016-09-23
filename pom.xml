@@ -62,11 +62,11 @@
          </execution>
      </executions>
      <configuration>
-         <imagename>deege/${project.artifactId}</imagename>
+         <imagename>mo6SpringBoot/${project.artifactId}</imagename>
          <baseimage>java:8</baseimage>
-         <maintainer>DJ Spiess (dj@deege.com)</maintainer>
+         <maintainer>Mozes R (mrahangmetan@gmail.com)</maintainer>
          <entrypoint>
-             ["java", "-jar", "/opt/${project.build.finalName}.jar"]
+             ["java", "-jar", "/${project.build.finalName}.jar"]
          </entrypoint>
  
          <serverid>docker-hub</serverid>
@@ -74,7 +74,7 @@
  
           <resources>        <!-- Dockerfile building resources -->
               <resource>
-                  <targetpath>/opt/</targetpath>
+                  <targetpath>/</targetpath>
                   <directory>${project.build.directory}</directory>
                   <excludes>
                       <exclude>target/**/*</exclude>
